@@ -17,10 +17,11 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
-                                <th>#</th>
-                                <th>รหัสผู้ใช้ระบบ</th>
+                                <th align="center">#</th>
+                                <th align="center">รหัสผู้ใช้ระบบ</th>
                                 <th>ชื่อผู้ใช้ะบบ</th>
                                 <th>Username</th>
+                                <th>Level</th>
                                 <th style="text-align: center" width="120px">
                                 </th>
                             </tr>
@@ -31,6 +32,7 @@
                                 <td align="center">{{ user.user_code }}</td>
                                 <td>{{ user.name }}</td>
                                 <td>{{ user.username }}</td>
+                                <td>{{ user.level }}</td>
                                 <td>
                                     <button class="btn btn-primary" ng-click="modalEdit(user)">
                                         <i class="fa fa-pencil-alt"> 
@@ -103,6 +105,23 @@
                                                         Password *
                                                 </label>
                                                 <input type='password' class="form-control" ng-model="input.password" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="box box-success">
+                                        <div class="box-body">
+                                            <div class="form-group">
+                                                <label>
+                                                        เลือกปนะเภทสินค้า
+                                                </label>
+                                                <select ng-model="input.level" class="form-control">
+                                                    <option value="">-Choose-</option>
+                                                    <option value="admin">Admin</option>
+                                                    <option value="sale">Sale</option>
+                                                    <option value="member">Member</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>

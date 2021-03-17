@@ -1,13 +1,11 @@
 app.controller('UserController', function($scope, $http) {
-    // $scope.groups = [];
-    // $scope.input = {};
-    // $scope.importdata = {};
-    // $scope.importdata.data = "";
+    // $scope.level = [level_name : 'admin'] ;
     $scope.startPage = function() {
         $scope.loaduser();
     }; 
 
     $scope.actionSave = function() {
+        console.log($scope.input)
         if($scope.input.username == undefined || $scope.input.password == undefined ){
             alertify.error('กรุณากรอกข้อมูล');
         }else{

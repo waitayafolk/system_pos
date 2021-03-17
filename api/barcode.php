@@ -35,7 +35,7 @@ $style = '
 </style>
 ';
 
-$barcode .= '
+$barcode = '
 <button id="printPageButton" onClick="window.print();">Print</button>
 <td>
     <div style="display: inline-block;width: 250px;text-align: center;padding-left:5px ;padding-top:15px;">
@@ -60,7 +60,7 @@ $barcode .= '
 </td>
       
 ';
-echo $style.$barcode;
+echo $style . $barcode;
 
 
 ?>

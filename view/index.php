@@ -48,7 +48,10 @@
     <script type="text/javascript" src="../controller/ProductController.js"></script>
     <script type="text/javascript" src="../controller/DashbordController.js"></script>
     <script type="text/javascript" src="../controller/ImportstockController.js"></script>
-    
+    <script type="text/javascript" src="../controller/SaleController.js"></script>
+    <script type="text/javascript" src="../controller/Reportstock.js"></script>
+    <script type="text/javascript" src="../controller/BillController.js"></script>
+
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>

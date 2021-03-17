@@ -1,7 +1,7 @@
 <?php
 include('condb.php');
 $params = json_decode(file_get_contents('php://input'));
-//   print_r($params->bill->code);exit();
+  // print_r($params);exit();
 $sql = "
   INSERT INTO tb_stock (bill_id, user, created_date, status) 
   VALUES(:bill_id, :user,  NOW(), 'use')
@@ -16,7 +16,7 @@ $stmt->execute(array(
 $id = $pdo->lastInsertId();
 
 $temp = $params->temp;
-foreach ($temp as $r) {
+foreach ($temp as $r) { 
 
   $sql = "
     INSERT INTO tb_stock_detail(stock_id, product_id, 	qty, price, status) 

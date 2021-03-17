@@ -26,10 +26,10 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
-                                <th>
+                                <th class="text-center">
                                     #
                                 </th>
-                                <th>
+                                <th class="text-center">
                                     รหัสสินค้า
                                 </th>
                                 <th>
@@ -159,6 +159,18 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="box box-success">
+                                        <div class="box-body">
+                                            <div>
+                                                <input type="file" name="image" id="image" ng-file-select="onFileSelect($files)">
+                                                    <br/>
+                                                <span class="errorMsg">{{ message}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
                             <div class="text-center">
                                 <button type="button" class="btn btn-primary" ng-click="actionSave()">
