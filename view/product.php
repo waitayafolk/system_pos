@@ -159,19 +159,21 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                     <div class="box box-success">
                                         <div class="box-body">
-                                            <div>
-                                                <input type="file" name="image" id="image" ng-file-select="onFileSelect($files)">
-                                                    <br/>
-                                                <span class="errorMsg">{{ message}}</span>
+                                            <div class="form-group" style="margin-top: 10px">
+                                                <input type="file" id="file" class="form-control" name="file" ng-files="getTheFilesproduct($files)" value="input.img" />
+                                                <div ng-click="uploadFiles(input)">
+                                                    <a class="input-group-addon">
+                                                        <i class=" fa fa-arrow-up "></i> Upload รูปภาพ
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
-                            </div>
                             <div class="text-center">
                                 <button type="button" class="btn btn-primary" ng-click="actionSave()">
                                     <i class="fa fa-check">

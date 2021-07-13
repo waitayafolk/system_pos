@@ -43,6 +43,7 @@
     include ('left_menu.php');
     ?>
     <script type="text/javascript" src="../controller/index.js"></script>
+    <script type="text/javascript" src="../controller/Dashbord.js"></script>
     <script type="text/javascript" src="../controller/GroupProductController.js"></script>
     <script type="text/javascript" src="../controller/UserController.js"></script>
     <script type="text/javascript" src="../controller/ProductController.js"></script>
